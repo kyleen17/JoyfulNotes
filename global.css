@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #814EBC;
+    --secondary-color: #33DDFF;
+    --tertiary-color: #f8d210;
+    --accent-color: #5EEb5B;
+    --bg-color: #f7f7f7;
+    --font-color: #333;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('./images/Joyful\ Notes\ background\ \(Website\).png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+  }
+
+  header {
+    background-color: var(--primary-color);
+    font-family: "Love Ya Like A Sister", cursive; 
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  header img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+
+  nav {
+    background-color: var(--accent-color);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+
+
+ 
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }

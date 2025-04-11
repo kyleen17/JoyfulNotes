@@ -1,0 +1,324 @@
+:root {
+    --primary-color: #814EBC;
+    --secondary-color: #33DDFF;
+    --tertiary-color: #f8d210;
+    --accent-color: #5EEb5B;
+    --bg-color: #f7f7f7;
+    --font-color: #333;
+  }
+
+/* Homepage */
+
+.hero {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+
+  .hero h2 {
+    font-family: "Love Ya Like A Sister", cursive; 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #f03564;
+    margin-bottom: 1rem;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content p {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Program section */
+  
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .program-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .program-box:hover {
+    transform: scale(1.03);
+  }
+  
+  .program-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .program-box h3 {
+    color: #ff6f61;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .program-box p {
+    padding: 0 1rem 1.5rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .program-box a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+  /* EVENTS SECTION */
+  #events {
+    background-color: rgba(110, 198, 255, 0.2);
+  }
+  
+  /* CONTACT SECTION */
+  #contact a {
+    color: #f03564;
+    font-weight: bold;
+  }
+
+  /* About Page */
+
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .about-content img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section spacing and structure */
+  section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mission section */
+  #mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Why Choose Us list */
+  #why-choose ul {
+    padding-left: 1.2rem;
+  }
+  
+  #why-choose li {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+    list-style: none;
+  }
+  
+  #why-choose li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Testimonials */
+  #testimonials {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #555;
+  }
+
+  /* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .sparkles {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #fff7d6, #ffd700);
+    border-radius: 50%;
+    animation: sparkle-float 4s linear infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes sparkle-float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  .cursor-sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #fff7d6, #ffd700);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    animation: sparkle-move 0.8s ease-out forwards;
+    opacity: 0.8;
+  }
+  
+  @keyframes sparkle-move {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.5) translateY(-20px);
+      opacity: 0;
+    }
+  }
+
+  .note-sparkle {
+    position: absolute;
+    font-size: 20px;
+    animation: note-float 1s ease-out forwards;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 1;
+    color: hsl(var(--hue), 100%, 60%);
+  }
+  
+  @keyframes note-float {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.5) translateY(-40px);
+      opacity: 0;
+    }
+  }
+  
+  /* Optional: update color dynamically */
+  :root {
+    --hue: 0;
+  }
+
+  /* Classes page -Class Boxes */
+.class-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .class-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .class-box img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Sign Up Button */
+  .signup-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #e0574f;
+    transform: scale(1.05);
+  }
+  
+  
+  
+  
